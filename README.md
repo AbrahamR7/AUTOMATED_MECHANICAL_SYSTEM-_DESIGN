@@ -25,10 +25,6 @@ Modified trapezoidal trajectory is a dimensionless diagram of acceleration. Beca
 
 <img width="448" alt="image" src="https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/d3b9dc7e-003f-47ca-ab3d-ca106dfd4126">
 
-The acceleration, velocity and position diagrams of modified trapezoidal trajectory that has been developed on Matlab :
-
-![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/3ee13455-a8c8-4631-b3a3-03ac718018a2)
-
 ### Displacement diagram
 
 We write a Matlab Script that plots displacement of the movements MC01 (with taking account the different length between 6cm and 16cm as you see in different colors in the Fig.3), MC02 and MC03.
@@ -126,3 +122,17 @@ From the figure it can be obtained that, the root mean square of the torque (blu
 By using this motor and the reducer we can reach almost 90 pieces without any problem at the check points, but we almost reach the threshold. 
 
 ### Crank slider mechanism
+
+The slider-crank mechanism is a four bar chain with a slider replacing an infinitely long output link. In this case a rotoidal joint is degenerated and its axis is placed to infinite. If the pin, whose axis is degenerated, is connected with the ground the slider-crank mechanism is called ordinary.
+Mechanical actuators are suitable to both rotating and linear movements. Moreover they are cable of generating complex movements. The crank which is the rotating disc, the slider or piston which slides and creates a linear movement basically inside the tube and the connecting rod which joins the parts together. The length of the Rod that connect the crank to the slider must be greater than Crank radius.
+
+<img width="468" alt="image" src="https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/9a3a4f62-138c-4238-b973-59c56dfee92e">
+
+In this project by considering the motor and reducer type and also the desire length of the wire to be cut, we design the crank and the Rob as in Matlab code, 1.5 cm and 3 cm respectively in Simscape. In the Simscape Multibody workspace we identify the bodies, joints and constraints to incorporate in our model. We consider the force and torque acting between bodies and directly at joints. In order to model the bodies we specify the solid properties of the bodies and add frames to them. In this case we can connect joints and constraints, apply force and torque and finally sense the motion.
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/dc57c29f-2eb6-49d3-a4e7-f28efec4933b)
+
+##### Go and return movement of the crank
+
+##### Continuous movement of the crank
+
