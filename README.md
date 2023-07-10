@@ -3,7 +3,7 @@
  ###  Introduction
 
    
-The objective of this project is to research and create a "Cut-off machine". In this project we are going to utilize three different functional groups by labeling them by groups (Motion curve-01) or MC01, (Motion curve-02) or MC02 and (Motion curve 03) or MC03 Which are the feeding group, pressing group and cutting group, respectively. 
+The objective of this project is to research and create a "Cut-off machine". In the project we are going to utilize three different functional groups by labeling them by groups (Motion curve-01) or MC01, (Motion curve-02) or MC02 and (Motion curve 03) or MC03 Which are the feeding group, pressing group and cutting group, respectively. 
 Each of these function group has a specific total rise. Cutting length can vary between 60 to 160 mm. Total rise of MC02 and Total rise of MC03 are 5mm and 15mm sequentially (H02=5 mm, H03=15 mm). As it has been assigned for us the diameter of the wire to be cut is 6 mm and material is AISI 1040 (C40). Productivity varies from 30 to 90 products per minute. The material considered for this project is C40, which has the following characteristics. In this project, we intend to cut the material with ranges length from 60mm to 160mm and have 30 to 90 products per minute. 
 
 <img width="400" alt="image" src="https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/202f4d11-5466-4101-8f6e-cc43057b9907">
