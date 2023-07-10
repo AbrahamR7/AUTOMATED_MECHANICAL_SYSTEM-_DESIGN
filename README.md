@@ -135,5 +135,36 @@ In this project by considering the motor and reducer type and also the desire le
 
 ##### Go and return movement of the crank
 
+According to the dimensions selected for go and return movement of the crank and the equations mentioned above, the value of α will be:
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/12712ef9-88ba-4cb7-a6f8-017893c06c47)
+
+The value of α increase from 0 to 75 degree, remain in this value for certain time, then decrease to 0 degree again. 
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/e6cb627b-89d6-468e-bd8e-c13c76ba53fb)
+
+According to the value of α the total displacement of slider will be 15mm that required by cutting machine. As it can be seen, the last diagram which is belong to the load torque that required from a motor to establish the final movement.
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/4942a24b-4feb-4ec4-ac79-0303ec0895bf)
+
+motors which their α values are over the beta line, are the ones which can be used. So
+all the motors are valid to be considered. 
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/5321c7bd-e068-4b56-87db-31c0ff9328b8)
+
+So we can use the motors that have reducer between the maximum 𝜏 and minimum 𝜏. To be more precise the reducers are valid which are between 𝜏𝑚𝑎𝑥 and 𝜏𝑝 which is the parameter that limited the acceptable range.
+in this case motor number 7 and reducer number 2 from top are chosen to prevent oversizing.
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/bc6541ea-8559-4cb7-ae54-6f4458358257)
+
+As it can be seen in figure, the last diagram is belonged to the torque which need to produce by motor.
+
+We consider it products 90 per minute.  
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/99756b61-73b4-43d6-917b-acbaacc321a3)
+
+From the figure it can be obtained that, the root mean square of the torque (blue line) is lower than the nominal torque of the motor (green line), while the torque (black line) is also lower than the maximum torque (redline). Therefore, the motor number 2 and reducer number 1 are valid and our motor is sized.
+
 ##### Continuous movement of the crank
 
+According to the dimensions selected for continuous movement of the crank, the value of α will be: 
