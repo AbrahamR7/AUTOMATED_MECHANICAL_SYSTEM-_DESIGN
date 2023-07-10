@@ -81,3 +81,48 @@ In this section of report, we write another power balance equation which depend 
 
 ##### MELSERVO-J4 
 
+Mitsubishi rotary servo motors are available in capacities from 10 W to 220 kW. Linear servo motors and direct drive motors satisfy new needs in driving control by providing high rigidity, performance and flexibility in system configurations unique to a direct drive.
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/9dca3c5f-13f9-48b3-b4cd-330b43e4bb68)
+
+   After defining the motors, it is time to check which one are qualified to be used, it means that the α parameter of which one goes over the β line; but before that it is needed to know that in the process of retrieval data from catalogue, the rotor inertia depends on size of the motor and it is needed to check if it is too small or not; if so, it should be neglected but in our case they were unneglectable or sometimes it is needed to add some axillary values such as brake which might have a affect.
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/e578ee11-8cb7-4a92-9ccb-968e94a06ebd)
+
+Among all the motors, motor number 7, 8 and 9 could not reach β line so it is not valid to be considered. Therefore, another motors number which their α values are over the beta line, are the ones which can be used.
+After all α and β were defined, it is time to calculate ∆𝜏, in order to do this, it is needed to use the maximum velocity achievable by our motion because we need to define the limited transition ratio.
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/0a946dad-6b01-46ac-9132-c0354acb5aea)
+
+So we can use the motors that have reducer between the maximum 𝜏 and minimum 𝜏. To be more precise the reducers are valid which are between 𝜏𝑚𝑎𝑥 and 𝜏𝑝 which is the parameter that limited the acceptable range.
+
+Due to a kinematic constrain there is a limit transmission ratio under which the motor is not capable of reaching the required velocity to the load: 										
+If τp > τmax we have to choose a motor with a greater α 							
+If τmin < τp < τmax we have to choose a reducer with transmission ratio between τp < τ < τmax 							
+If τp < τmin the transmission ratio choosing can be done in the all range τmin < τ < τmax 	
+
+In this case motor number 3 and reducer number 3 from top are chosen.				
+Rotary servo motor model: HG-JR 15K1M4(B)
+Rated torque: 95.5 [N•m]
+Maximum torque: 286 [N•m]
+Rated speed: 1500 [r/min]
+Maximum speed: 3000 [r/min]
+Moment of inertia J: 315 [× 10-4 kg•m2]
+Reducer model: SSHdR175-15/1-H-56C-1.0
+Ratio: 15:1
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/fffa95f2-0430-4bcd-ab0b-441b2a435542)
+
+As it can be seen in figure, The last diagram is belonged to the torque which need to produce by motor.
+
+### Performance analysis 
+
+The productivity range is from 30 to 90 products per minute. We consider it products 60 per minute.  
+Now it is time to check that root mean square of 𝐶𝑚 is lower than the nominal torque. But it should be noted that the first and the last value of nominal torque can be considered from the catalogue, when we used the first, it means we use a motor more powerful than we want and wise versa. And also, we need to check that 𝐶𝑚 is lower than maximum torque of the motor.	
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/cca94f0e-a1e0-47cc-8d24-a0a3de83c680)
+
+From the figure it can be obtained that, the root mean square of the torque (blue line) is lower than the nominal torque of the motor (greenlined), while the torque (black line) is also lower than the maximum torque (redline). Therefore, the motor number 2 and reducer number 1 are valid and our motor is sized.
+By using this motor and the reducer we can reach almost 90 pieces without any problem at the check points, but we almost reach the threshold. 
+
+### Crank slider mechanism
