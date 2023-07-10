@@ -52,3 +52,32 @@ Finally, by applying h, the total displacement, and the degree of rising to the 
 The maximum values of velocity and acceleration of the movement MC01 and MC02 Could be defined as following:
 
 The productivity level in this case is 60 product per minute, so the angular velocity is 6.28 rpm. the maximum values of velocity and acceleration of the movement MC01 are 0.6769 m/s and 9.2167 m⋅s−2   respectively. the maximum values of velocity and acceleration of the movement MC02 are 0.0597 m/s and 1.9167 m⋅s−2   respectively.
+
+### Ball Screw Mechanism  
+
+Ball screws are mechanical linear actuators that consist of a screw shaft and a nut that contain a ball that rolls between their matching helical grooves. The primary function of ball screws is to convert rotational motion to linear motion. Ball nuts are used in transmitting forces to a stationary or dynamic load with high accuracy, precision, and repeatability. The main components of ball screws are the screw shaft, the nut, and the ball bearings (or balls). We will discuss their important specifications and their impact on the operation. Ewellix is a global innovator and manufacturer of linear motion and actuation solutions used in assembly automation, medical applications and mobile machinery.
+##### Features 
+Nominal diameter from 25 to 50 mm								
+Lead from 20 to 50 mm 								
+Lubrication hole for grease nipple or for automatic lubrication kit 				
+Standard protection at each end of the nut with composite wipers integrated into recirculation caps (NOWPR) 								
+Optional double protection at each end of the nut with additional brush wipers fitted into recirculation caps (WPR) 								
+Optional surface coating on shaft and nut 							
+
+we use the Inventor Multibody software to design the cutting group actuated by Ball-Screw mechanism. Initially we design the parts in a 2D sketch, with respect to the value that used before in our ball-screw Matlab code, then the parts extruded and change to 3D models.
+
+### Dynamic analysis
+
+   In order to develop the dynamic model, first we need to solve the power balance equation of the system. 
+The power balance equation is: C.ω + F.V=0 
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/1e8bc0ed-9a0e-4f0d-878d-0f07c4edc575)
+
+As it can be seen, the last diagram which is belong to the torque have affected by high value of external force. The large amount of force needed during the wire cutting part of the movement.
+
+### Motor reducer sizing
+
+In this section of report, we write another power balance equation which depend on the whole system and add the motor and reducer that we have to size. The equation which we have to size is, 𝐶𝑚. 𝜔𝑚 + 𝐽𝑚. 𝜔 ′ 𝑚. 𝜔𝑚 = 𝐶𝑟 . 𝜔𝑟 + 𝐽𝑡𝑜𝑡. 𝜔 ′ 𝑟 . 𝜔𝑟 
+
+##### MELSERVO-J4 
+
