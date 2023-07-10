@@ -154,6 +154,14 @@ all the motors are valid to be considered.
 
 So we can use the motors that have reducer between the maximum 𝜏 and minimum 𝜏. To be more precise the reducers are valid which are between 𝜏𝑚𝑎𝑥 and 𝜏𝑝 which is the parameter that limited the acceptable range.
 in this case motor number 7 and reducer number 2 from top are chosen to prevent oversizing.
+Rotary servo motor model: HG-JR 734(B)
+Rated torque: 2.4 [N•m]
+Maximum torque: 7.2 [N•m]
+Rated speed: 3000 [r/min]
+Maximum speed: 6000 [r/min]
+Moment of inertia J: 2.09 [× 10-4 kg•m2]
+Reducer model: SSHdR175-10/1-H-56C-1.0
+Ratio: 10:1
 
 ![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/bc6541ea-8559-4cb7-ae54-6f4458358257)
 
@@ -168,3 +176,30 @@ From the figure it can be obtained that, the root mean square of the torque (blu
 ##### Continuous movement of the crank
 
 According to the dimensions selected for continuous movement of the crank, the value of α will be: 
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/929a6ab3-541a-40f2-a304-768ea325345b)
+
+The value of α increase from 0 to 180 degree, remain in this value for certain time, then increase again to peaked at 360 degrees. 
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/e4314037-6c95-42e8-88cd-920d13c6089c)
+
+According to the value of α the total displacement of slider will be 15mm that required by cutting machine. As it can be seen, the last diagram which is belong to the load torque that required from a motor to establish the final movement.
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/ba80af9a-b004-4e68-a91c-be52b4291a8a)
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/31859ad8-3bde-4f62-85dd-49276f391957)
+
+So, we can use the motors that have reducer between the maximum 𝜏 and minimum 𝜏. To be more precise the reducers are valid which are between 𝜏𝑚𝑎𝑥 and 𝜏𝑝 which is the parameter that limited the acceptable range.
+in this case motor number 8 and reducer number 1 from top are chosen to prevent oversizing.	
+Rotary servo motor model: HG-JR 1534(B)
+Rated torque: 4.8 [N•m]
+Maximum torque: 14.3 [N•m]
+Rated speed: 3000 [r/min]
+Maximum speed: 6000 [r/min]
+Moment of inertia J: 3.79 [× 10-4 kg•m2]
+Reducer model: SSHdR175-5/1-H-56C-1.0
+Ratio: 5:1
+
+![image](https://github.com/AbrahamR7/AUTOMATED_MECHANICAL_SYSTEM-_DESIGN/assets/119547831/e1474ba7-60ab-4b05-98ef-dc85d99f2382)
+
+As it can be seen in figure, the last diagram is belonged to the torque which need to produce by motor.
